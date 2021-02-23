@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox1</title>
+    <link rel="stylesheet" href="/Assets/Styles/normalize.css">
+    <style>
+        p,
+        header,
+        main,
+        nav,
+        section,
+        aside,
+        footer {
+            border: 1px solid red;
+        }
+
+        .flexcontainer1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            border: 2px solid blue;
+            height: 300px;
+        }
+
+        .flexcontainer2 {
+            border: 2px solid green;
+            flex-direction: row;
+            display: flex;
+            align-items: stretch;
+            height: 30vh;
+        }
+
+        .unique {
+            align-self: center;
+            flex-grow: 1;
+
+        }
+
+        .flexcontainer3 {
+            border: 2px solid purple;
+            flex-direction: row;
+            display: flex;
+            align-items: stretch;
+            height: 30vh;
+        }
+
+.flexp{
+    flex-basis: 25vw;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox 🥳</h1>
+    <div class="flexcontainer1">
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <p>Paragraph 4</p>
+    </div>
+
+    <div class="flexcontainer2">
+        <p>Text 1</p>
+        <p class="unique">Text 2</p>
+        <p>Text 3</p>
+        <p>Text 4</p>
+    </div>
+
+    <div class="flexcontainer3">
+        <p class="flexp">Words 1</p>
+        <p class="flexp">Words 2</p>
+        <p class="flexp">Words 3</p>
+        <p class="flexp">Words 4</p>
+    </div>
+</body>
+
+</html>
