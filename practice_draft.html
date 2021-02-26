@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete</title>
+    <link rel="stylesheet" href="/Assets/Styles/normalize.css">
+
+    <style>
+                /* Colours: gray for footer and header #e0e0e0
+        light beige for main #fff8e3 
+        beige for tabs "Ещё" #feeab9
+        green for aside #ddeccb */
+        main,
+        aside {
+            border: 1px solid red;
+            display: flex;
+        }
+
+        main {
+            background-color: #FFF8E3;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 50vh;
+        }
+
+        aside {
+            background-color: #DDECCB;
+            flex-direction: column;
+            justify-content: center;
+            width: 30vw;
+            height: 50vh;
+
+            .all_main {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .mainish {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .main_row {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .sub_tab {
+                display: flex;
+                flex-direction: row;
+            }
+    </style>
+</head>
+
+<body>
+    <main class="all_main">тут весь main - blue
+        <div class="mainish"> green 1 (main)
+            <div class="main_row"> yellow 1 [Основная часть] (main_row)</div>
+            <div class="main_row"> yellow 2 (main_row)
+                <div class="sub_tab">[Ещё 1] (sub_tab)</div>
+                <div class="sub_tab">[Ещё 2] (sub_tab)</div>
+            </div>
+            <div class="main_row"> yellow 3 [Ещё 3] (main_row)</div>
+        </div>
+
+        <aside class="mainish"> green 2 (aside)
+            [Боковая область] aside
+        </aside>
+    </main>
+</body>
+
+</html>
