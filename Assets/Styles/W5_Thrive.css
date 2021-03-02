@@ -3,11 +3,21 @@
     src: url('/Assets/Fonts/Larsseit.otf');
 }
 
-body {
+.wrapper {
     background-color: #F4F9E2;
+    display: flex;
+    flex-direction: column;
+
 }
 
-p {
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%
+}
+
+.logo {
     font-family: Larsseit_Norm;
     font-style: normal;
     font-weight: bold;
@@ -15,6 +25,27 @@ p {
     line-height: 23px;
     letter-spacing: -0.035em;
     color: #62D0DF;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+
+}
+
+.content_left {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    height: 400px;
+}
+
+.content_right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 
 h1 {
@@ -51,7 +82,7 @@ h1 {
     color: rgb(27, 27, 110);
 }
 
-#intro {
+.intro {
     width: 469px;
     height: 161px;
     left: 179px;
@@ -81,6 +112,8 @@ h1 {
     font-weight: 700;
     text-decoration: none;
     color: #FAB63E;
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .bottom:active {
